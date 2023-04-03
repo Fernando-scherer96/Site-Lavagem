@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px;
+    background-color: #000000;
+    color: #FFA500;
+}
+header h1,
+section h2 {
+    font-weight: normal;
+}
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    color: #FFA500;
+    font-size: 18px;
+}
+
+header nav li a {
+    display: inline;
+    margin-left: 16px;
+    color: #FFA500;
+    text-decoration: none;
+}
+
+.conteiner {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .conteiner,
+section .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .conteiner {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+section {
+    color: #000000;
+}
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+.social-links li a {
+    text-decoration: none;
+}
+#contact .conteiner {
+    display: block;
+}
+.contact-methods {
+    justify-content: space-between;
+    display: flex;
+}
+
+.contact-methods > div {
+    width: 32%;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+.contact-methods h3 {
+    display: inline;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+form button {
+    background-color: #FFA500;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FF8C00;
+}
+
+input:focus, textarea:focus {
+    outline-color: #FFA500;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFA500;
+    padding: 16px 0;
+}
+
+/* Adicione essa linha no início do seu CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Adicione esta classe para a animação de transição */
+.transition {
+    transition: all 0.3s ease;
+}
+
+header {
+    padding: 16px;
+    background-image: url('./Imagens/background-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFA500;
+}
+
+header nav li a:hover,
+.social-links li a:hover {
+    opacity: 0.7;
+}
+
+.social-links li a {
+    display: inline-block;
+}
+
+form button:hover {
+    background-color: #FF8C00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adicione esta regra para dar um efeito suave ao passar o mouse */
+header nav li a,
+.social-links li a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+header nav li a:before,
+.social-links li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFA500;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+header nav li a:hover:before,
+.social-links li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Adicione esta regra CSS para definir o tamanho da imagem da lavagem */
+.store-front {
+    max-width:  600px; /* Defina a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 36px;
+}
